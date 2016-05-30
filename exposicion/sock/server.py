@@ -7,7 +7,7 @@ sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 # # Serial port parameters
 serial_speed = 9600
-serial_port = '/dev/tty.HC-06-DevB' # bluetooth shield hc-06
+serial_port = '/dev/tty.HC-06-DevB' # bluetooth shield hc-06, ls /dev/tty.*
 #connect to bluetooth
 conn_bluetooth = serial.Serial(serial_port, serial_speed, timeout=1)
 
